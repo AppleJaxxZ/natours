@@ -1,0 +1,7 @@
+@mixin clearfix {
+  &::after {
+    content: ""; //Content is made empty because we dont want any content after our element.
+    display: table;
+    clear: both; //clear applies to both float left and right.
+  }
+}
